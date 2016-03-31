@@ -1,0 +1,24 @@
+{
+    "name": "billychow/yii2-jpush",
+    "description": "JPush Component for Yii2",
+    "keywords": ["yii2", "extension", "jpush"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/billychow/yii2-jpush/issues",
+        "source": "https://github.com/billychow/yii2-jpush"
+    },
+    "authors": [
+        {
+            "name": "Billy",
+            "email": "billychou@gmail.com"
+        }
+    ],
+    "require": {
+        "jpush/jpush": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "billychow\\jpush\\": ""
+        }
+    }
+}
