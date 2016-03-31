@@ -1,9 +1,10 @@
 <?php
 namespace billychow\jpush;
+
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 
-class Jpush extends Component
+class JPush extends Component
 {
     public $appKey;
     public $appSecret;
@@ -16,7 +17,7 @@ class Jpush extends Component
         if(empty($this->appKey) || empty($this->appSecret)) {
             throw new InvalidConfigException("appKey and appSecret cannot be empty!");
         }
-        $this->jPush = new \jpush\jpush\JPush($this->appKey, $this->appSecret);
+        $this->jPush = new \JPush($this->appKey, $this->appSecret);
     }
 
     public function __call($method, $args = [])
