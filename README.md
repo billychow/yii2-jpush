@@ -1,3 +1,6 @@
+update `composer.json` like this:
 ```
-composer require "billychow/yii2-jpush" "*"
+"require-dev": {
+	"billychow/yii2-jpush": "dev-master"
+}
 ```
