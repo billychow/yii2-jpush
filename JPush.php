@@ -17,7 +17,8 @@ class JPush extends Component
         if(empty($this->appKey) || empty($this->appSecret)) {
             throw new InvalidConfigException("appKey and appSecret cannot be empty!");
         }
-        $this->jPush = new \JPush($this->appKey, $this->appSecret);
+
+        $this->jPush = new \JPush($this->appKey, $this->appSecret, \Yii::getAlias('@runtime/logs/jpush.log'));
     }
 
     public function __call($method, $args = [])
